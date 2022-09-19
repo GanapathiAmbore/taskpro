@@ -19,5 +19,6 @@ from taskapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home,name='home')
+    path('',views.home,name='home'),
+    path('post_api/', views.post_api,name='post_api')
 ]
