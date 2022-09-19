@@ -7,6 +7,7 @@ from rest_framework.decorators import api_view
 def home(request):
     posts = Post.objects.all()
     return render(request,'home.html',{'posts':posts})
+
 @api_view(['GET'])
 def post_api(request):
     posts = Post.objects.all()
